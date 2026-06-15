@@ -30,7 +30,7 @@ export default function Hero() {
             className="font-display text-5xl md:text-6xl font-bold text-white leading-[1.08] mb-4"
           >
             Mireille<br />
-            <span className="text-gold">Umuhire</span>
+            <span className="text-gold">Umuhire Ihimbazwe</span>
           </motion.h1>
 
           <motion.p {...fadeUp(0.3)}
