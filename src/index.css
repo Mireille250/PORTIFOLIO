@@ -1,0 +1,45 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* ─── Custom scrollbar ─────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #C9A84C55; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #C9A84C; }
+
+/* ─── Blueprint grid ───────────────────────────────── */
+.blueprint-grid {
+  background-image:
+    linear-gradient(rgba(201,168,76,1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201,168,76,1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* ─── Smooth scroll ────────────────────────────────── */
+html { scroll-behavior: smooth; }
+
+/* ─── Pulse animation ──────────────────────────────── */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: .5; transform: scale(1.5); }
+}
+.pulse-dot { animation: pulse-dot 2s infinite; }
+
+/* ─── Scroll hint ──────────────────────────────────── */
+@keyframes scroll-down {
+  0%, 100% { opacity: .3; transform: scaleY(.5) translateY(-8px); }
+  50%       { opacity: 1;  transform: scaleY(1)  translateY(8px);  }
+}
+.scroll-arrow { animation: scroll-down 2s ease-in-out infinite; }
+
+/* ─── Section fade-in (JS adds .visible) ──────────── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .55s ease, transform .55s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
