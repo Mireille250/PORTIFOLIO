@@ -36,7 +36,7 @@ export default function Hero() {
           <motion.p {...fadeUp(0.3)}
             className="text-white/50 text-xs uppercase tracking-[0.12em] mb-5"
           >
-            Backend Software Engineer &nbsp;|&nbsp; Construction Technology Graduate
+            Backend Software Engineer &nbsp;|&nbsp; Construction Technology Student
           </motion.p>
 
           <motion.p {...fadeUp(0.4)}
